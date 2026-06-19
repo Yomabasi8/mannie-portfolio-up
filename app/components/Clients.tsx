@@ -26,7 +26,7 @@ function MarqueeRow({ items, reverse }: { items: typeof podcasts; reverse?: bool
   return (
     <div className="overflow-hidden">
       <div
-        className={`flex animate-scroll-x ${reverse ? "[animation-direction:reverse]" : ""}`}
+        className={`flex animate-scroll-x-triple transform-gpu ${reverse ? "[animation-direction:reverse]" : ""}`}
         style={{ width: "max-content" }}
       >
         <div className="flex gap-6 mr-6">
@@ -37,6 +37,11 @@ function MarqueeRow({ items, reverse }: { items: typeof podcasts; reverse?: bool
         <div className="flex gap-6 mr-6">
           {items.map((podcast) => (
             <Tile key={`${podcast.src}-dup`} podcast={podcast} />
+          ))}
+        </div>
+        <div className="flex gap-6 mr-6">
+          {items.map((podcast) => (
+            <Tile key={`${podcast.src}-dup2`} podcast={podcast} />
           ))}
         </div>
       </div>
