@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -60,12 +61,12 @@ export default function About() {
             We also handle the <span className="text-brand-button">distribution</span> and uploads to audio streaming platforms like Spotify and Apple Podcasts.
           </p>
 
-          <a
-            href="#contact"
+          <Link
+            href="/about"
             className="bg-brand-button text-white font-jetbrains text-sm font-bold px-8 py-3.5 rounded-lg border-2 border-brand-black-dark shadow-[3px_3px_0px_0px_#060606] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#060606] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[0px_0px_0px_0px_#060606] transition-all duration-150 inline-block"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </section>

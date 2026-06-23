@@ -46,7 +46,7 @@ export default function Hero() {
         {/* CTA Button */}
         <div className="mb-16 sm:mb-20">
           <a
-            href="#consultation"
+            href="mailto:waveproductions.net@gmail.com?subject=I%20want%20to%20book%20a%20consultation"
             className="bg-[#D2E6FF] hover:bg-[#c2ddff] text-brand-black-dark font-jetbrains text-sm font-bold px-8 py-3.5 rounded-lg border-2 border-brand-black-dark shadow-[3px_3px_0px_0px_#060606] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#060606] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[0px_0px_0px_0px_#060606] transition-all duration-150 inline-block"
           >
             Book a Consultation
