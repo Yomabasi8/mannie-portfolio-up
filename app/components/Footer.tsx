@@ -176,15 +176,7 @@ export default function Footer() {
         </div>
 
         <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center">
-          <div className="relative w-[26vw] min-w-[240px] max-w-[480px] aspect-[1089/1932] origin-bottom hover:animate-tilt-swing">
-            <Image
-              src="/images/big mic.png"
-              alt="Vintage microphone"
-              fill
-              sizes="480px"
-              className="object-contain object-bottom"
-            />
-          </div>
+          <Microphone />
         </div>
 
         <div className="absolute left-1/2 -translate-x-1/2 top-[30vw] z-20 w-screen overflow-hidden pointer-events-none">
