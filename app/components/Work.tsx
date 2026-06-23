@@ -1,19 +1,9 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { TrackCard, type Track } from "./AudioTrackCard";
 
-const bars = [
-  { height: "35%", color: "bg-brand-button" },
-  { height: "55%", color: "bg-brand-button" },
-  { height: "80%", color: "bg-[#7C3AED]" },
-  { height: "100%", color: "bg-[#7C3AED]" },
-  { height: "70%", color: "bg-brand-button" },
-  { height: "85%", color: "bg-[#7C3AED]" },
-  { height: "45%", color: "bg-brand-button" },
-  { height: "30%", color: "bg-brand-button" },
-];
-
-const tracks = [
+const tracks: Track[] = [
   {
     title: "The Game Nobody Owned_mixdown",
     gradient: "from-[#2546D6] to-[#0A2A6B]",
@@ -35,23 +25,6 @@ const tracks = [
     src: "/audio/Heartbeats of Kigali S1E2_mixdown.mp3",
   },
 ];
-
-function PlayIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6 ml-0.5">
-      <polygon points="6,4 20,12 6,20" />
-    </svg>
-  );
-}
-
-function PauseIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6">
-      <rect x="6" y="4" width="4" height="16" rx="1" />
-      <rect x="14" y="4" width="4" height="16" rx="1" />
-    </svg>
-  );
-}
 
 export default function Work() {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
@@ -87,7 +60,7 @@ export default function Work() {
             </h2>
           </div>
           <a
-            href="#"
+            href="/work"
             className="font-jetbrains text-sm font-bold text-brand-black-dark underline underline-offset-4 mt-2 transition-colors hover:text-brand-secondary"
           >
             View all
@@ -95,44 +68,19 @@ export default function Work() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6">
-          {tracks.map((track, index) => {
-            const isPlaying = playingIndex === index;
-            return (
-              <div
-                key={track.title}
-                className="w-full sm:w-[calc((100%-3*1.5rem)/4)] bg-white rounded-2xl shadow-[6px_6px_0px_0px_#060606] p-6 flex flex-col items-center text-center"
-              >
-                <h3 className="font-jetbrains text-sm font-bold text-brand-black-dark mb-4 leading-snug">
-                  {track.title}
-                </h3>
-                <div className="w-full h-20 bg-[#EDEAFB] rounded-xl flex items-end justify-center gap-1.5 px-4 py-3 mb-6">
-                  {bars.map((bar, i) => (
-                    <span
-                      key={i}
-                      className={`w-1.5 rounded-full origin-bottom ${bar.color} ${isPlaying ? "animate-wave-bar" : ""}`}
-                      style={{ height: bar.height, animationDelay: `${i * 90}ms` }}
-                    />
-                  ))}
-                </div>
-                <button
-                  type="button"
-                  onClick={() => togglePlay(index)}
-                  aria-label={`${isPlaying ? "Pause" : "Play"} ${track.title}`}
-                  className={`w-16 h-16 rounded-full flex items-center justify-center shadow-lg bg-gradient-to-br ${track.gradient}`}
-                >
-                  {isPlaying ? <PauseIcon /> : <PlayIcon />}
-                </button>
-                <audio
-                  ref={(el) => {
-                    audioRefs.current[index] = el;
-                  }}
-                  src={track.src}
-                  onEnded={() => setPlayingIndex(null)}
-                  preload="none"
-                />
-              </div>
-            );
-          })}
+          {tracks.map((track, index) => (
+            <div key={track.title} className="sm:w-[calc((100%-3*1.5rem)/4)]">
+              <TrackCard
+                track={track}
+                isPlaying={playingIndex === index}
+                onToggle={() => togglePlay(index)}
+                audioRef={(el) => {
+                  audioRefs.current[index] = el;
+                }}
+                onEnded={() => setPlayingIndex(null)}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

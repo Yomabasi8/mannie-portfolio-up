@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-const stickers: { text: string; bg: string; variants: string[] }[] = [
+export type Sticker = { text: string; bg: string; variants: string[] };
+
+const defaultStickers: Sticker[] = [
   {
     text: "Podcasts",
     bg: "bg-[#FBD7CF]",
@@ -30,7 +32,7 @@ const stickers: { text: string; bg: string; variants: string[] }[] = [
   },
 ];
 
-export default function StickerField() {
+export default function StickerField({ stickers = defaultStickers }: { stickers?: Sticker[] }) {
   const [tick, setTick] = useState(0);
 
   useEffect(() => {
