@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <Image
-            src="/images/logo 2 (1).png"
+            src="/images/loggo.png"
             alt="Wave Productions"
             width={249}
             height={185}
