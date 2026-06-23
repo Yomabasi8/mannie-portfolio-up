@@ -17,7 +17,7 @@ export default function CTA() {
           </p>
 
           <div className="relative inline-block">
-            <div className="absolute left-[29px] -top-[6px] w-12 h-12 sm:-left-7 sm:-top-3 sm:w-20 sm:h-20 -z-10">
+            <div className="absolute left-5 -top-2 w-12 h-12 sm:-left-7 sm:-top-3 sm:w-20 sm:h-20 -z-10">
               <Image src="/images/Ellipse1 1.png" alt="" fill sizes="80px" className="object-contain" />
             </div>
             <h2 className="font-bricolage text-3xl sm:text-5xl font-extrabold text-white leading-tight tracking-tight">

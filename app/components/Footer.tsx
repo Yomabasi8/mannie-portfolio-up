@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 const navLinks = [
@@ -66,12 +69,36 @@ function WaveBand({ slow }: { slow?: boolean }) {
             d={WAVE_PATH}
             fill="none"
             stroke="currentColor"
-            strokeWidth={WAVE_AMPLITUDE * 1.9}
+            className="[stroke-width:160] sm:[stroke-width:95]"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
         </svg>
       ))}
+    </div>
+  );
+}
+
+function Microphone() {
+  const [swinging, setSwinging] = useState(false);
+
+  return (
+    <div
+      className={`relative w-[26vw] min-w-[240px] max-w-[480px] aspect-[1089/1932] origin-bottom hover:animate-tilt-swing ${
+        swinging ? "animate-tilt-swing" : ""
+      }`}
+      onClick={() => {
+        setSwinging(true);
+        setTimeout(() => setSwinging(false), 2800);
+      }}
+    >
+      <Image
+        src="/images/big mic.png"
+        alt="Vintage microphone"
+        fill
+        sizes="480px"
+        className="object-contain object-bottom"
+      />
     </div>
   );
 }
