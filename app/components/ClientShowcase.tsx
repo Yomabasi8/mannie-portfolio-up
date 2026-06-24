@@ -3,8 +3,8 @@ const clients = [
     name: "The Unity Rock Podcast",
     description:
       "This is the podcast where visionaries and integrators come together to share real stories, practical strategies, and hard-earned insights. Hosted by Clayton Stenson, The Unity Guide, the show dives into meaningful conversations with builders and innovators in the EOS community. Each episode explores how vision turns into action, how people bring ideas to life, and what it truly takes to create lasting impact in business and leadership. If you're interested in authentic conversations with people who are making things happen, follow, subscribe, and join us as we get into the conversation.",
-    embedUrl: "https://open.spotify.com/embed/episode/3j7LDianrSrhMGRZiAr7OM",
-    platform: "spotify" as const,
+    embedUrl: "https://embed.podcasts.apple.com/us/podcast/s1-e6-finding-the-flow-in-the-vi-duo-with-jill-young/id1873605230?i=1000751734958",
+    platform: "apple" as const,
   },
   {
     name: "Million Dollar Relationship Podcast",
@@ -31,8 +31,8 @@ const clients = [
     name: "The Unserious Podcast",
     description:
       "This is a light-hearted show where Mannie shares allegedly funny stories and talks about random topics in the most exaggerated and unserious way possible!",
-    embedUrl: "https://open.spotify.com/embed/episode/7x5Vf2qdy7wSBRApaMPJbu",
-    platform: "spotify" as const,
+    embedUrl: "https://embed.podcasts.apple.com/us/podcast/s2-e6-if-i-ruled-nigeria-for-a-day-with-martha/id1762500455?i=1000715353322",
+    platform: "apple" as const,
   },
   {
     name: "Grieve with Christ After Loss",
