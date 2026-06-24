@@ -6,10 +6,10 @@ import Image from "next/image";
 const phoneOffsets = ["mt-0", "mt-10 sm:mt-14", "mt-20 sm:mt-28", "mt-32 sm:mt-44"];
 
 const videos = [
-  "/videos/Instagram Wave Productions Teaser.mp4",
-  "/videos/IITY Podcast Audiogram Introduction.mp4",
-  "/videos/Instagram Post - TBPage 2.mp4",
-  "/videos/S2 E6 Snippet.mp4",
+  { src: "/videos/Instagram Wave Productions Teaser.mp4", objectFit: "cover", objectPosition: "center" },
+  { src: "/videos/IITY Podcast Audiogram Introduction.mp4", objectFit: "contain", objectPosition: "center" },
+  { src: "/videos/MDR 391 - Jamie Dykstra Audiogram.mp4", objectFit: "cover", objectPosition: "center" },
+  { src: "/videos/S2 E6 Snippet.mp4", objectFit: "cover", objectPosition: "center" },
 ];
 
 function PlayIcon() {
@@ -31,15 +31,29 @@ function PauseIcon() {
 
 function PhoneFrame({
   videoSrc,
+  objectFit = "cover",
+  objectPosition = "center",
   isPlaying,
   onToggle,
   videoRef,
 }: {
   videoSrc: string;
+  objectFit?: string;
+  objectPosition?: string;
   isPlaying: boolean;
   onToggle: () => void;
   videoRef: (el: HTMLVideoElement | null) => void;
 }) {
+  const bgVideoRef = useRef<HTMLVideoElement | null>(null);
+  const showBlurBg = objectFit === "contain";
+
+  useEffect(() => {
+    const bg = bgVideoRef.current;
+    if (!bg) return;
+    if (isPlaying) bg.play().catch(() => {});
+    else bg.pause();
+  }, [isPlaying]);
+
   return (
     <div className="relative w-full aspect-[693/1337]">
       <Image
@@ -54,12 +68,23 @@ function PhoneFrame({
         className="absolute left-[8.3%] right-[8.5%] top-[3.2%] bottom-[3.3%] overflow-hidden"
         style={{ borderRadius: "10%" }}
       >
+        {showBlurBg && (
+          <video
+            ref={bgVideoRef}
+            src={videoSrc}
+            loop
+            playsInline
+            muted
+            className="absolute inset-0 w-full h-full object-cover scale-110 blur-lg"
+          />
+        )}
         <video
           ref={videoRef}
           src={videoSrc}
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full"
+          style={{ objectFit: objectFit as "cover" | "contain", objectPosition }}
         />
         <button
           type="button"
@@ -141,7 +166,9 @@ export default function FeaturedAudiograms() {
               style={{ transitionDelay: revealed ? `${i * 220}ms` : "0ms" }}
             >
               <PhoneFrame
-                videoSrc={videos[i]}
+                videoSrc={videos[i].src}
+                objectFit={videos[i].objectFit}
+                objectPosition={videos[i].objectPosition}
                 isPlaying={playingIndex === i}
                 onToggle={() => togglePlay(i)}
                 videoRef={(el) => {
