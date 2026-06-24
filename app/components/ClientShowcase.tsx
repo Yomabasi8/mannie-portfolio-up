@@ -68,15 +68,8 @@ export default function ClientShowcase() {
             </h2>
             <div className="rounded-2xl border-2 border-brand-black-dark shadow-[4px_4px_0px_0px_#060606] overflow-hidden">
               <div className="flex flex-col sm:flex-row">
-                {/* Description */}
-                <div className="flex-1 p-6 sm:p-8 flex items-center">
-                  <p className="font-poppins text-sm sm:text-base text-brand-black-light leading-relaxed">
-                    {client.description}
-                  </p>
-                </div>
-
                 {/* Podcast embed */}
-                <div className="w-full sm:w-[340px] shrink-0 border-t-2 sm:border-t-0 sm:border-l-2 border-brand-black-dark bg-white flex items-center justify-center p-6">
+                <div className="w-full sm:w-[340px] shrink-0 border-b-2 sm:border-b-0 sm:border-r-2 border-brand-black-dark bg-white flex items-center justify-center p-6">
                   {"platform" in client && client.embedUrl ? (
                     client.platform === "apple" ? (
                       <iframe
@@ -99,6 +92,13 @@ export default function ClientShowcase() {
                       />
                     )
                   ) : null}
+                </div>
+
+                {/* Description */}
+                <div className="flex-1 p-6 sm:p-8 flex items-center">
+                  <p className="font-poppins text-sm sm:text-base text-brand-black-light leading-relaxed">
+                    {client.description}
+                  </p>
                 </div>
               </div>
             </div>
