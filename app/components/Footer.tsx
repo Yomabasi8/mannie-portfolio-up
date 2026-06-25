@@ -4,11 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Work Samples", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work Samples", href: "/work" },
+  { label: "Clients", href: "/clients" },
 ];
 
 function XIcon() {
@@ -142,29 +139,9 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
-        <div>
-          <h3 className="font-bricolage text-lg font-bold text-white mb-4">Contact Us</h3>
-          <p className="font-poppins text-sm text-white/80 leading-relaxed">
-            Email:{" "}
-            <a
-              href="mailto:emmanuelokonkojr@gmail.com"
-              className="underline underline-offset-2 hover:text-white transition-colors"
-            >
-              emmanuelokonkojr@gmail.com
-            </a>
-            <br />
-            <br />
-            Email:{" "}
-            <a
-              href="mailto:waveproductions.net@gmail.com"
-              className="underline underline-offset-2 hover:text-white transition-colors"
-            >
-              waveproductions.net@gmail.com
-            </a>
-          </p>
-
-          <p className="font-poppins text-xs text-white/60 mt-6">
+        {/* Copyright */}
+        <div className="flex items-end">
+          <p className="font-poppins text-xs text-white/60">
             © {new Date().getFullYear()} Wave Productions. All rights reserved.
           </p>
         </div>
