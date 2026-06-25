@@ -21,7 +21,7 @@ export default function CTA() {
               <Image src="/images/Ellipse1 1.png" alt="" fill sizes="80px" className="object-contain" />
             </div>
             <h2 className="font-bricolage text-3xl sm:text-5xl font-extrabold text-white leading-tight tracking-tight">
-              <span className="text-brand-black-dark">Le</span>t&apos;s Make your Podcast
+              <span className="text-white sm:text-brand-black-dark">Le</span>t&apos;s Make your Podcast
               <br />
               Unforgettable
             </h2>
