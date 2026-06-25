@@ -14,8 +14,8 @@ function PhotoCard({
   className?: string;
 }) {
   return (
-    <div className={`group relative w-full max-w-[440px] aspect-[4/5] ${className}`}>
-      <div className="absolute -top-6 -left-6 w-[92%] h-[92%] -rotate-3 transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-6">
+    <div className={`group relative w-full max-w-[300px] sm:max-w-[440px] aspect-[4/5] ${className}`}>
+      <div className="absolute -top-3 -left-3 sm:-top-6 sm:-left-6 w-[92%] h-[92%] -rotate-3 transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:-rotate-6">
         <Image src="/images/blueeeeeey.png" alt="" fill className="object-cover" />
       </div>
       <div className="absolute bottom-0 right-0 w-[84%] h-[90%] rotate-2 rounded-2xl overflow-hidden">
@@ -33,7 +33,7 @@ function PhotoCard({
 
 export default function AboutContent() {
   return (
-    <section className="bg-brand-bg px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section className="bg-brand-bg px-8 sm:px-6 lg:px-8 py-16 sm:py-24">
       <div className="max-w-[1100px] mx-auto">
         <h2 className="font-bricolage text-[clamp(2.75rem,6.5vw,5.5rem)] font-extrabold text-brand-black-dark text-center leading-tight">
           Meet Emmanuel Okonko
