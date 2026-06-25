@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import About from "./components/About";
+import Founder from "./components/Founder";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Clients from "./components/Clients";
@@ -19,13 +20,16 @@ export default function Home() {
         <About />
       </Reveal>
       <Reveal>
+        <Clients />
+      </Reveal>
+      <Reveal>
+        <Founder />
+      </Reveal>
+      <Reveal>
         <Services />
       </Reveal>
       <Reveal>
         <Work />
-      </Reveal>
-      <Reveal>
-        <Clients />
       </Reveal>
       <Reveal>
         <Testimonials />

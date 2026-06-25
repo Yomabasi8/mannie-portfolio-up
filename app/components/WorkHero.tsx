@@ -13,7 +13,7 @@ const stickers: Sticker[] = [
     variants: ["left-[76%] top-[24%] rotate-6", "left-[73%] top-[28%] -rotate-4", "left-[79%] top-[20%] rotate-3"],
   },
   {
-    text: "Thumbnail Design",
+    text: "Cover Art Design",
     bg: "bg-[#CFEEE0]",
     variants: ["left-[12%] top-[46%] -rotate-3", "left-[15%] top-[50%] rotate-5", "left-[9%] top-[42%] -rotate-7"],
   },

@@ -32,7 +32,7 @@ export default function CTA() {
           </p>
 
           <a
-            href="mailto:waveproductions.net@gmail.com"
+            href="mailto:emmanuelokonkojr@gmail.com"
             className="bg-white text-brand-black-dark font-jetbrains text-sm font-bold px-8 py-3.5 rounded-lg border-2 border-brand-black-dark shadow-[3px_3px_0px_0px_#060606] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#060606] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[0px_0px_0px_0px_#060606] transition-all duration-150 inline-block"
           >
             Let&apos;s talk

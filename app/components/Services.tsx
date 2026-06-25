@@ -91,7 +91,7 @@ const services = [
     featured: false,
   },
   {
-    title: "Thumbnail Design",
+    title: "Cover Art Design",
     description:
       "Your podcast cover is the first wave your audience sees. We design artwork that is bold, on-brand, and built to stand out on every platform.",
     icon: BrushIcon,

@@ -1,6 +1,34 @@
 import Image from "next/image";
-import StickerField from "./StickerField";
+import StickerField, { type Sticker } from "./StickerField";
 import SlideUp from "./SlideUp";
+
+const stickers: Sticker[] = [
+  {
+    text: "Podcaster",
+    bg: "bg-[#CFEEE0]",
+    variants: ["left-[14%] top-[20%] -rotate-3 z-20", "left-[15%] top-[23%] -rotate-5 z-20", "left-[13%] top-[17%] -rotate-2 z-20"],
+  },
+  {
+    text: "Audio Editor",
+    bg: "bg-[#FBF6E9]",
+    variants: ["left-[32%] top-[20%] rotate-3 z-20", "left-[33%] top-[23%] rotate-5 z-20", "left-[31%] top-[17%] rotate-2 z-20"],
+  },
+  {
+    text: "Podcaster Manager",
+    bg: "bg-[#FBD7CF]",
+    variants: ["left-[7%] top-[62%] -rotate-4 z-20", "left-[8%] top-[65%] -rotate-6 z-20", "left-[6%] top-[59%] -rotate-3 z-20"],
+  },
+  {
+    text: "Podcast Producer",
+    bg: "bg-[#CFEEE0]",
+    variants: ["left-[36%] top-[62%] rotate-3 z-20", "left-[37%] top-[65%] rotate-5 z-20", "left-[35%] top-[59%] rotate-2 z-20"],
+  },
+  {
+    text: "Podcast Assistant",
+    bg: "bg-[#FBD7CF]",
+    variants: ["left-[18%] top-[75%] -rotate-3 z-20", "left-[19%] top-[78%] -rotate-5 z-20", "left-[17%] top-[72%] -rotate-2 z-20"],
+  },
+];
 
 function wobblyEdge(x1: number, y1: number, x2: number, y2: number, bumps: number, amp: number) {
   const dx = x2 - x1;
@@ -68,7 +96,7 @@ export default function AboutHero() {
       <div className="relative w-full bg-brand-button overflow-hidden min-h-[520px] sm:min-h-[620px] lg:min-h-[700px] flex items-center">
         <WobblyBorder />
 
-        <StickerField />
+        <StickerField stickers={stickers} />
 
         {/* Text column */}
         <div className="relative z-10 pl-10 sm:pl-16 lg:pl-24 pr-6 sm:pr-10 lg:pr-14 lg:max-w-[64%]">

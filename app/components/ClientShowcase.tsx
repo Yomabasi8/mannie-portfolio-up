@@ -3,8 +3,8 @@ const clients = [
     name: "The Unity Rock Podcast",
     description:
       "This is the podcast where visionaries and integrators come together to share real stories, practical strategies, and hard-earned insights. Hosted by Clayton Stenson, The Unity Guide, the show dives into meaningful conversations with builders and innovators in the EOS community. Each episode explores how vision turns into action, how people bring ideas to life, and what it truly takes to create lasting impact in business and leadership. If you're interested in authentic conversations with people who are making things happen, follow, subscribe, and join us as we get into the conversation.",
-    embedUrl: "https://embed.podcasts.apple.com/us/podcast/s1-e6-finding-the-flow-in-the-vi-duo-with-jill-young/id1873605230?i=1000751734958",
-    platform: "apple" as const,
+    embedUrl: "https://open.spotify.com/embed/episode/0paPREkRCyNzmje7w8vN6",
+    platform: "spotify" as const,
   },
   {
     name: "Million Dollar Relationship Podcast",
@@ -24,21 +24,21 @@ const clients = [
     name: "Ain't That Good Podcast",
     description:
       "The Ain't That Good podcast is an honest and gritty podcast that reframes this life through the lens of Christ and his teachings. Tonya, Brandy, Kiesha, and Chelsey are all sinners, saved by grace through Jesus, being transformed by God's goodness and love.",
-    embedUrl: "https://embed.podcasts.apple.com/us/podcast/the-power-of-permission/id1687909931?i=1000773699182",
-    platform: "apple" as const,
+    embedUrl: "https://open.spotify.com/embed/episode/28c2mKmjfrQBlx03wT5rtM",
+    platform: "spotify" as const,
   },
   {
     name: "The Unserious Podcast",
     description:
       "This is a light-hearted show where Mannie shares allegedly funny stories and talks about random topics in the most exaggerated and unserious way possible!",
-    embedUrl: "https://embed.podcasts.apple.com/us/podcast/s2-e6-if-i-ruled-nigeria-for-a-day-with-martha/id1762500455?i=1000715353322",
+    embedUrl: "https://embed.podcasts.apple.com/us/podcast/s2-e6-if-i-ruled-nigeria-for-a-day-with-martha/id1762500455",
     platform: "apple" as const,
   },
   {
     name: "Grieve with Christ After Loss",
     description:
       "Grieve with Christ After Loss is a podcast for Christian women navigating the pain of losing a loved one. Hosted by Kaitlyn, a Certified Christian Life Coach specializing in grief, each episode offers biblical grief support, spiritual encouragement, and practical tools to help listeners process emotions without guilt, rebuild their faith, and rediscover their God-given purpose. Whether you're struggling with loneliness, emotional triggers, or simply wondering if you're grieving the right way, this podcast reminds you that you don't have to walk the road of loss alone. Listeners are also invited to join the private Facebook community, Faith-Based Grief Support for Women, for continued connection and healing.",
-    embedUrl: "https://embed.podcasts.apple.com/eg/podcast/41-how-do-you-trust-god-after-losing-your-husband-mary/id1790301490?i=1000710854618",
+    embedUrl: "https://embed.podcasts.apple.com/eg/podcast/41-how-do-you-trust-god-after-losing-your-husband-mary/id1790301490",
     platform: "apple" as const,
   },
   {
@@ -52,8 +52,8 @@ const clients = [
     name: "The Blank Page Podcast",
     description:
       "Welcome to The Blank Page, where we celebrate the books that shaped us and the ones we're just discovering. Each episode, we explore the craft behind great writing, powerful characters, plot twists and stories that stay with us long after we've turned the final page. This podcast is co-hosted by two long time friends, Gary Chris who is a lawyer and content writer and Fortune who is a writer, author and UI/UX designer.",
-    embedUrl: "https://open.spotify.com/embed/episode/4sfoABdWtdeM0YyRffAriA",
-    platform: "spotify" as const,
+    embedUrl: "https://embed.podcasts.apple.com/by/podcast/page-4-literature-in-english-i/id1833498337",
+    platform: "apple" as const,
   },
 ];
 

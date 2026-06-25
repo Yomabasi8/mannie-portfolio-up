@@ -21,35 +21,38 @@ export default function Hero() {
           />
         </div>
 
-        {/* Heading Section with offset background ellipse */}
+        {/* Heading Section */}
         <div className="relative max-w-4xl mb-6">
-          <div className="absolute -top-4 left-0 sm:-top-4 sm:left-3 w-14 h-14 sm:w-24 sm:h-24 -z-10">
-            <Image
-              src="/images/Ellipse 1.png"
-              alt=""
-              fill
-              sizes="(max-width: 640px) 56px, 96px"
-              className="object-contain"
-            />
-          </div>
-
           <h1 className="font-bricolage text-4xl sm:text-6xl lg:text-[64px] font-extrabold text-[#060606] leading-[1.15] tracking-tight">
-            Giving You the <span className="text-[#004AAD] relative inline-block">Push</span> to Make <span className="text-[#004AAD] relative inline-block">Waves</span> with Your Voice
+            <span className="relative inline-block">
+              <div className="absolute -top-3 -left-6 w-14 h-14 sm:w-20 sm:h-20 lg:w-24 lg:h-24 -z-10">
+                <Image
+                  src="/images/Ellipse 1.png"
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 56px, (max-width: 1024px) 80px, 96px"
+                  className="object-contain"
+                />
+              </div>
+              Po
+            </span>dcast Editing Services
           </h1>
         </div>
 
         {/* Subtitle */}
         <p className="max-w-2xl font-poppins text-base sm:text-lg text-[#363636] leading-relaxed mb-8 sm:mb-10 px-2">
-          Welcome to Wave Productions, where we take your raw audio files (WAV, MP3 & M4A) and shape them into smooth, powerful episodes.
+          Just do the talking, and we&apos;ll handle the rest! We handle podcast launch, editing, distribution, and audiograms.
         </p>
 
         {/* CTA Button */}
         <div className="mb-16 sm:mb-20">
           <a
-            href="mailto:waveproductions.net@gmail.com?subject=I%20want%20to%20book%20a%20consultation"
+            href="https://calendly.com/emmanuelokonkojr/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#D2E6FF] hover:bg-[#c2ddff] text-brand-black-dark font-jetbrains text-sm font-bold px-8 py-3.5 rounded-lg border-2 border-brand-black-dark shadow-[3px_3px_0px_0px_#060606] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#060606] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[0px_0px_0px_0px_#060606] transition-all duration-150 inline-block"
           >
-            Book a Consultation
+            Book a Free Consultation
           </a>
         </div>
 

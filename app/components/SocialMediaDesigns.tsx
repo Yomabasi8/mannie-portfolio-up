@@ -5,7 +5,7 @@ const designs = [
   { src: "/images/t1ur.png", alt: "The Unity Rock Podcast episode 10 cover" },
   { src: "/images/uns.png", alt: "The Unserious Podcast 500 plays thank you graphic" },
   { src: "/images/waq.png", alt: "Glory, co-host of The Blank Page" },
-  { src: "/images/sdf.png", alt: "Million Dollar Relationships episode 392 cover" },
+  { src: "/images/Dark Academia Social.jpeg", alt: "Dark Academia: The Podcast cover" },
   { src: "/images/Fortune.png", alt: "Fortune, co-host of The Blank Page" },
   { src: "/images/quote.png", alt: "The Unserious Podcast inspirational quote graphic" },
   { src: "/images/christmas.png", alt: "The Unserious Podcast Merry Christmas graphic" },

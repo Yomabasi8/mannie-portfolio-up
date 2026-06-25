@@ -52,21 +52,15 @@ export default function About() {
 
           <p className="font-jetbrains text-sm text-brand-black-light/70 mb-3">Who we are</p>
           <h2 className="font-bricolage text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-brand-black-dark leading-[1.2] tracking-tight mb-6">
-            Great Podcasts Are not Just Recorded, They are Crafted.
+            Giving You the Push to Make Waves with Your Voice
           </h2>
           <p className="font-poppins text-base text-brand-black-light leading-relaxed mb-5">
-            We handle the <span className="text-brand-button">editing</span>, mixing, and mastering so every episode carries the <span className="text-brand-button">clarity</span>, polish, and energy your voice deserves.
+            Welcome to Wave Productions, where we take your raw audio files (WAV, MP3 & M4A) and shape them into smooth, powerful episodes. Like an ocean wave quietly building beneath the surface, your podcast already has the energy to be impactful. It just needs the right push. That&apos;s where we come in.
           </p>
           <p className="font-poppins text-base text-brand-black-light leading-relaxed mb-8">
-            We also handle the <span className="text-brand-button">distribution</span> and uploads to audio streaming platforms like Spotify and Apple Podcasts.
+            We take care of the editing, mixing and mastering, distribution and uploads across streaming platforms like Spotify, Apple Podcasts, and more. The finished product is an episode with clarity, and good sound quality your voice deserves.
           </p>
 
-          <Link
-            href="/about"
-            className="bg-brand-button text-white font-jetbrains text-sm font-bold px-8 py-3.5 rounded-lg border-2 border-brand-black-dark shadow-[3px_3px_0px_0px_#060606] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#060606] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[0px_0px_0px_0px_#060606] transition-all duration-150 inline-block"
-          >
-            Learn More
-          </Link>
         </div>
       </div>
     </section>

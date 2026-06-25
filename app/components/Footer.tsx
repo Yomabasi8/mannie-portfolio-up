@@ -122,14 +122,8 @@ export default function Footer() {
           </p>
 
           <div className="flex items-center gap-5 mt-6 text-white">
-            <a href="#" aria-label="X" className="hover:text-white/70 transition-colors">
-              <XIcon />
-            </a>
-            <a href="#" aria-label="Instagram" className="hover:text-white/70 transition-colors">
+            <a href="https://www.instagram.com/waveproductionsnetwork" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-white/70 transition-colors">
               <InstagramIcon />
-            </a>
-            <a href="#" aria-label="Google" className="hover:text-white/70 transition-colors">
-              <GoogleIcon />
             </a>
           </div>
         </div>
@@ -152,7 +146,14 @@ export default function Footer() {
         <div>
           <h3 className="font-bricolage text-lg font-bold text-white mb-4">Contact Us</h3>
           <p className="font-poppins text-sm text-white/80 leading-relaxed">
-            Phone: +234 813 451 7303
+            Email:{" "}
+            <a
+              href="mailto:emmanuelokonkojr@gmail.com"
+              className="underline underline-offset-2 hover:text-white transition-colors"
+            >
+              emmanuelokonkojr@gmail.com
+            </a>
+            <br />
             <br />
             Email:{" "}
             <a
