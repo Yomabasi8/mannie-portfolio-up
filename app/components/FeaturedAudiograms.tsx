@@ -75,6 +75,7 @@ function PhoneFrame({
             loop
             playsInline
             muted
+            preload="none"
             className="absolute inset-0 w-full h-full object-cover scale-110 blur-lg"
           />
         )}
@@ -83,6 +84,7 @@ function PhoneFrame({
           src={videoSrc}
           loop
           playsInline
+          preload="none"
           className="absolute inset-0 w-full h-full"
           style={{ objectFit: objectFit as "cover" | "contain", objectPosition }}
         />
