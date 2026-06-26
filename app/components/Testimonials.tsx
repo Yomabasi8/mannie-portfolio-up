@@ -122,7 +122,7 @@ export default function Testimonials() {
               <Image src="/images/Ellipse 1.png" alt="" fill sizes="80px" className="object-contain" />
             </div>
             <h2 className="font-bricolage text-3xl sm:text-4xl font-extrabold text-brand-black-dark tracking-tight">
-              What Our Clients are Saying
+              What My Clients are Saying
             </h2>
           </div>
         </div>
